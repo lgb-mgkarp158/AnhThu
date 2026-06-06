@@ -1,7 +1,7 @@
 /**
  * Digital Portfolio CNS - Lê Bảo Anh Thư
  * Class: VNU1001_E252068 | Khóa QH2025S
- * Interactive Tab Navigation & Smooth Transitions
+ * Interactive Navigation Routing & Smooth Page Scrolling
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,58 +9,55 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.section');
 
   function activateSection(targetId) {
-    // Deactivate all
+    // Check if target section exists
+    const targetSection = document.getElementById(targetId);
+    if (!targetSection) return;
+
+    // Deactivate all sections and nav links
     sections.forEach(s => s.classList.remove('active'));
     navItems.forEach(n => n.classList.remove('active'));
 
     // Activate target section
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.classList.add('active');
-    }
+    targetSection.classList.add('active');
 
-    // Activate corresponding nav item
+    // Activate corresponding nav item in the top header
     const targetNav = document.getElementById('nav-' + targetId);
     if (targetNav) {
       targetNav.classList.add('active');
     }
 
-    // Scroll main content to top
-    const mainContent = document.querySelector('.main-content');
-    if (mainContent) {
-      mainContent.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    // Scroll window smoothly to the top (sticky header stays at top)
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Navigation click handlers
-  navItems.forEach(item => {
+  // Bind click handlers to all anchor tags with internal hash links
+  const clickableLinks = document.querySelectorAll('.nav-item, .cta-btn, .preview-link-btn, .site-logo');
+  clickableLinks.forEach(item => {
     item.addEventListener('click', (e) => {
-      e.preventDefault();
       const href = item.getAttribute('href');
       if (href && href.startsWith('#')) {
+        e.preventDefault();
         const targetId = href.substring(1);
         activateSection(targetId);
       }
     });
   });
 
-  // Initialize with intro section active
+  // Initialize with intro section active on page load
   activateSection('intro');
 
-  // Add hover effect to task cards
-  document.querySelectorAll('.task-card, .intro-box, .step-card').forEach(card => {
+  // Interactive Micro-animations for Cards
+  const cards = document.querySelectorAll('.task-card, .intro-box, .stat-card, .preview-link-card, .learn-card');
+  cards.forEach(card => {
     card.addEventListener('mouseenter', () => {
-      card.style.transition = 'transform 0.28s cubic-bezier(0.4,0,0.2,1), box-shadow 0.28s cubic-bezier(0.4,0,0.2,1)';
+      card.style.transform = 'translateY(-3px)';
+      card.style.boxShadow = '0 12px 32px rgba(90, 78, 122, 0.12)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'none';
+      card.style.boxShadow = 'none';
     });
   });
 
-  // Add table row hover highlight
-  document.querySelectorAll('tbody tr').forEach(row => {
-    row.addEventListener('mouseenter', () => {
-      row.style.transition = 'background 0.18s ease';
-    });
-  });
-
-  console.log('✨ Portfolio Lê Bảo Anh Thư initialized successfully!');
+  console.log('✨ Restructured Google Sites Format Portfolio for Lê Bảo Anh Thư initialized successfully!');
 });
