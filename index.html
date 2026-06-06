@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio CNS - Lê Bảo Anh Thư</title>
+  <meta name="description" content="Digital Portfolio học phần Nhập môn Công nghệ số và Ứng dụng AI - Lê Bảo Anh Thư, MSV 25011383, Trường Đại học Giáo dục ĐHQGHN">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Sidebar -->
+  <aside class="sidebar">
+    <div class="profile-section">
+      <!-- Glowing Rounded Avatar -->
+      <div class="avatar-container">
+        <img class="profile-avatar" src="assets/avatar.png" alt="Lê Bảo Anh Thư Avatar">
+        <div class="avatar-glow"></div>
+      </div>
+      <h2>Lê Bảo Anh Thư</h2>
+      <p class="student-id">MSSV: 25011383 · KH.N3 · QH2025S</p>
+
+      <div class="badge-container">
+        <span class="badge major-badge">Khoa học giáo dục</span>
+        <span class="badge institution-badge">Đại học Giáo dục, ĐHQGHN</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="#intro"       class="nav-item active" id="nav-intro">👋 Giới thiệu</a>
+      <a href="#task-1"      class="nav-item"        id="nav-task-1">📁 Bài 1: Quản lý tệp tin</a>
+      <a href="#task-2"      class="nav-item"        id="nav-task-2">🔍 Bài 2: Tìm kiếm học thuật</a>
+      <a href="#task-3"      class="nav-item"        id="nav-task-3">💬 Bài 3: Viết Prompt AI</a>
+      <a href="#task-4"      class="nav-item"        id="nav-task-4">👥 Bài 4: Hợp tác số nhóm</a>
+      <a href="#task-5"      class="nav-item"        id="nav-task-5">🎨 Bài 5: AI tạo sinh sáng tạo</a>
+      <a href="#task-6"      class="nav-item"        id="nav-task-6">🛡️ Bài 6: Đạo đức &amp; Liêm chính</a>
+      <a href="#task-7"      class="nav-item"        id="nav-task-7">🌐 Bài 7: Học liệu ngoại ngữ AI</a>
+      <a href="#reflection"  class="nav-item"        id="nav-reflection">💡 Phản tư &amp; Định hướng</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <p>Lớp: VNU1001_E252068</p>
+      <p>Học kỳ II – 2026</p>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- ==================== INTRO ==================== -->
+    <section class="section active" id="intro">
+      <div class="hero-card">
+        <p class="eyebrow">Digital Portfolio – Nhập môn Công nghệ số &amp; Ứng dụng Trí tuệ Nhân tạo</p>
+        <h1>Hành trình số hóa trong Giáo dục và Khoa học Nhân văn</h1>
+        <p class="lead">Chào mừng thầy cô và các bạn đến với không gian học thuật số của em. Đây là nơi hệ thống hóa và trình bày toàn bộ hành trình học tập qua 7 bài thực hành của học phần VNU1001_E252068, nơi em khám phá sức mạnh của công nghệ số, AI và tư duy phản biện trong lĩnh vực giáo dục và khoa học nhân văn.</p>
+
+        <div class="intro-grid">
+          <div class="intro-box">
+            <span class="box-icon">🎓</span>
+            <h4>Giáo dục &amp; Nhân văn</h4>
+            <p>Ứng dụng công nghệ số để khám phá và tôn vinh các giá trị nhân văn, nghệ thuật và khoa học xã hội trong kỷ nguyên số.</p>
+          </div>
+          <div class="intro-box">
+            <span class="box-icon">🤖</span>
+            <h4>AI có trách nhiệm</h4>
+            <p>Sử dụng AI như một công cụ hỗ trợ tư duy, luôn kiểm chứng thông tin và duy trì liêm chính học thuật trong mọi hoạt động nghiên cứu.</p>
+          </div>
+          <div class="intro-box">
+            <span class="box-icon">✨</span>
+            <h4>Sáng tạo nội dung số</h4>
+            <p>Kết hợp khéo léo giữa tư duy cá nhân và công cụ AI tạo sinh để sản xuất nội dung giáo dục độc đáo và có giá trị.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TASK 1 ==================== -->
+    <section class="section" id="task-1">
+      <article class="task-card">
+        <div class="task-head">
+          <span>01</span>
+          <div>
+            <h2>Thao tác cơ bản với Tệp tin &amp; Thư mục</h2>
+            <p>Xây dựng hệ thống quản lý dữ liệu cá nhân khoa học trên hệ điều hành Windows thông qua File Explorer.</p>
+          </div>
+        </div>
+
+        <p class="lead-text">Quản lý tệp tin có hệ thống là nền tảng quan trọng của năng lực làm việc số. Em đã thực hiện chuỗi 10 bước thao tác để thiết lập và vận hành cấu trúc thư mục học tập khoa học:</p>
+
+        <div class="process-flow">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <p><strong>Mở File Explorer:</strong> Nhấp vào biểu tượng thư mục màu vàng trên thanh Taskbar hoặc nhấn phím <code>Win + E</code>.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <p><strong>Truy cập ổ đĩa:</strong> Chọn <b>This PC</b>, chọn ổ D: là ổ lưu trữ dữ liệu ngoài hệ thống để bắt đầu.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <p><strong>Tạo thư mục gốc:</strong> Nhấp chuột phải → <code>New &gt; Folder</code>, đặt tên <code>ThucHanh_LeBAT</code> (ký hiệu cá nhân).</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <p><strong>Tạo file ghi chú:</strong> Vào trong thư mục, chuột phải → <code>New &gt; Text Document</code>, đặt tên <code>GhiChu.txt</code>.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">05</div>
+            <p><strong>Đổi tên file:</strong> Nhấp chuột phải → <b>Rename</b> (hoặc <code>F2</code>), đổi thành <code>GhiChuHocTap.txt</code>.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">06</div>
+            <p><strong>Tạo thư mục con:</strong> Chuột phải → tạo thư mục con <code>TaiLieu_Lop</code> trong thư mục gốc.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">07</div>
+            <p><strong>Sao chép tệp:</strong> Chuột phải <code>GhiChuHocTap.txt</code> → <b>Copy</b>, vào <code>TaiLieu_Lop</code> → <b>Paste</b>.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">08</div>
+            <p><strong>Di chuyển tệp:</strong> Tạo file <code>DiChuyen.txt</code>, chuột phải → <b>Cut</b>, vào <code>TaiLieu_Lop</code> → <b>Paste</b>.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">09</div>
+            <p><strong>Xóa tệp tin:</strong> Xóa tạm thời bằng <code>Delete</code> → vào Recycle Bin. Xóa vĩnh viễn bằng <code>Shift+Delete</code>.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">10</div>
+            <p><strong>Khôi phục:</strong> Mở <b>Recycle Bin</b> ngoài Desktop, chuột phải vào tệp đã xóa → <b>Restore</b> để phục hồi.</p>
+          </div>
+        </div>
+
+        <div class="structure-visual">
+          <h4>🌳 Sơ đồ cây thư mục học tập chuẩn hóa</h4>
+          <pre class="folder-tree">
+📂 D:\
+└── 📂 ThucHanh_LeBAT (Thư mục gốc cá nhân)
+    ├── 📄 GhiChuHocTap.txt (Đã khôi phục từ Recycle Bin)
+    └── 📂 TaiLieu_Lop (Thư mục tài liệu học tập)
+        ├── 📄 GhiChuHocTap.txt (Bản sao lưu)
+        └── 📄 DiChuyen.txt (Tệp đã di chuyển)</pre>
+        </div>
+
+        <a class="action-btn" href="docs/w1.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== TASK 2 ==================== -->
+    <section class="section" id="task-2">
+      <article class="task-card">
+        <div class="task-head">
+          <span>02</span>
+          <div>
+            <h2>Tìm kiếm &amp; Đánh giá Thông tin Học thuật</h2>
+            <p>Nghiên cứu tổng quan lĩnh vực xã hội nhân văn và nghệ thuật trong bối cảnh chuyển đổi số toàn cầu.</p>
+          </div>
+        </div>
+
+        <div class="research-intro">
+          <h4>💡 Chủ đề nghiên cứu tổng quan</h4>
+          <p>Trong bối cảnh thế giới biến đổi nhanh chóng bởi công nghệ và toàn cầu hóa, lĩnh vực xã hội nhân văn và nghệ thuật đóng vai trò nền tảng giúp con người hiểu bản chất xã hội, văn hóa và các mối quan hệ phức tạp. Theo UNESCO, các ngành khoa học xã hội và nhân văn có vai trò thiết yếu trong xây dựng xã hội bền vững, giúp con người thích nghi với sự thay đổi trong kỷ nguyên AI.</p>
+
+          <div class="query-block">
+            <strong>Toán tử tìm kiếm nâng cao:</strong><br>
+            <code>"social humanities" AND ("digital transformation" OR "AI in education") AND ("arts" OR "cultural studies") site:scholar.google.com OR site:jstor.org</code>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Bảng đánh giá độ tin cậy 12 tài liệu tham khảo (Tiêu chuẩn Harvard – APMC)</caption>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên tài liệu / Tác giả / Năm</th>
+                <th>Tác giả (A)</th>
+                <th>NXB/Cơ quan (P)</th>
+                <th>Phương pháp (M)</th>
+                <th>Trích dẫn (C)</th>
+                <th>Cập nhật (U)</th>
+                <th>Độ tin cậy tổng thể</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>AI in Education: Challenges &amp; Opportunities (Luckin, 2023)</strong></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Humanities &amp; Social Sciences in Digital Age (UNESCO, 2022)</strong></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>Critical Thinking Skills in AI Era (Brookfield, 2021)</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Cultural Studies &amp; Technology (Hall &amp; du Gay, 2019)</strong></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>Digital Arts in Education (Peppler, 2020)</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><strong>Pedagogy of the Oppressed (Freire, 2018 reprint)</strong></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-low">Kinh điển</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><strong>World Economic Forum – Skills Report (WEF, 2023)</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><strong>AI Ethics for Education (Zawacki-Richter, 2022)</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td><strong>Social Sciences in Sustainable Dev. (OECD, 2022)</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><strong>Digital Humanities Blog – Debates (Fitzpatrick, 2023)</strong></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-low">Thấp</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td><strong>Coursera – Introduction to AI in Education (2023)</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Khá</span></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td><strong>Sociological Research Methods (Bryman, 2020)</strong></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="analysis-box">
+          <h4>⚖️ Phân tích ưu – nhược điểm theo loại nguồn tài liệu</h4>
+          <div class="analysis-grid">
+            <div>
+              <strong>📑 Bài báo khoa học &amp; Báo cáo quốc tế (1-4, 7, 9)</strong>
+              <ul>
+                <li><b>Ưu điểm:</b> Độ tin cậy học thuật cao, được bình duyệt nghiêm ngặt, có phương pháp nghiên cứu rõ ràng.</li>
+                <li><b>Nhược điểm:</b> Thường có độ trễ trong cập nhật; ngôn ngữ chuyên ngành khó tiếp cận với người mới.</li>
+              </ul>
+            </div>
+            <div>
+              <strong>📚 Sách chuyên khảo kinh điển (6, 12)</strong>
+              <ul>
+                <li><b>Ưu điểm:</b> Nền tảng lý thuyết cực kỳ vững chắc, được trích dẫn rộng rãi, kiểm chứng qua thời gian.</li>
+                <li><b>Nhược điểm:</b> Ít cập nhật xu hướng mới, không phản ánh được sự thay đổi nhanh của công nghệ.</li>
+              </ul>
+            </div>
+            <div>
+              <strong>🏛️ Tài liệu tổ chức quốc tế (2, 7, 9)</strong>
+              <ul>
+                <li><b>Ưu điểm:</b> Uy tín cao (UNESCO, WEF, OECD), số liệu thống kê đáng tin cậy, phạm vi toàn cầu.</li>
+                <li><b>Nhược điểm:</b> Đôi khi mang tính chính sách, có thể thiếu chiều sâu học thuật cụ thể.</li>
+              </ul>
+            </div>
+            <div>
+              <strong>🌐 Blog/Nền tảng trực tuyến (10, 11)</strong>
+              <ul>
+                <li><b>Ưu điểm:</b> Cập nhật liên tục, dễ tiếp cận, nhiều ví dụ thực tế gần gũi.</li>
+                <li><b>Nhược điểm:</b> Thiếu kiểm duyệt học thuật, độ tin cậy không đồng đều, cần kiểm chứng chéo.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a class="action-btn" href="docs/w2.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== TASK 3 ==================== -->
+    <section class="section" id="task-3">
+      <article class="task-card">
+        <div class="task-head">
+          <span>03</span>
+          <div>
+            <h2>Kỹ nghệ viết Prompt hiệu quả cho AI</h2>
+            <p>Thử nghiệm so sánh 3 cấp độ Prompt với chủ đề vật lý lượng tử và công nghệ blockchain.</p>
+          </div>
+        </div>
+
+        <p class="lead-text">Thử nghiệm trực tiếp với 2 chủ đề phức tạp: <strong>Liên đới lượng tử (Quantum Entanglement)</strong> và <strong>Công nghệ Blockchain</strong> để phân tích sự dịch chuyển chất lượng phản hồi từ AI theo từng cấp độ câu lệnh:</p>
+
+        <div class="prompt-table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Tiêu chí đánh giá</th>
+                <th>Prompt cơ bản</th>
+                <th>Prompt cải tiến</th>
+                <th>Prompt nâng cao</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nội dung câu lệnh mẫu</strong></td>
+                <td><code>Hay tóm tắt nội dung chính của đoạn văn trên</code></td>
+                <td><code>Tóm tắt nội dung chính của đoạn văn dưới đây theo các ý chính và kết luận. Đoạn văn: [đoạn liên đới lượng tử]. Viết thành một đoạn văn ngắn, rõ ràng.</code></td>
+                <td><code>Bạn là một giáo sư vật lý. Hãy tóm tắt đoạn văn sau bằng cách thực hiện: (1) Liệt kê các khái niệm và ý chính; (2) Viết một đoạn văn tóm tắt ngắn gọn. Đoạn văn: [đoạn liên đới lượng tử].</code></td>
+              </tr>
+              <tr>
+                <td><strong>Mức độ chính xác</strong></td>
+                <td>4/5 – Đúng khái niệm nhưng thiếu cấu trúc và kết luận.</td>
+                <td>5/6 – Chi tiết, có cấu trúc "định nghĩa - ví dụ - kết luận", hơi dài.</td>
+                <td>5/5 – Nắm đầy đủ các ý, có bước liệt kê, rõ ràng và kết hợp thành công vai trò + chuỗi suy nghĩ.</td>
+              </tr>
+              <tr>
+                <td><strong>Chiều sâu nội dung</strong></td>
+                <td>Chỉ dừng ở định nghĩa phổ thông cơ bản.</td>
+                <td>Làm rõ khái niệm và liên hệ được vào các hiện tượng thực tế.</td>
+                <td>Đi sâu từ trực giác → định nghĩa → khái niệm kỹ thuật → tóm kết.</td>
+              </tr>
+              <tr>
+                <td><strong>Cấu trúc trình bày</strong></td>
+                <td>Một khối văn bản, thiếu phân cấp rõ ràng.</td>
+                <td>Chia 3 phần: Định nghĩa, Ví dụ, Kết luận.</td>
+                <td>Cấu trúc 2 tầng: Liệt kê ý chính → Tóm tắt tổng hợp.</td>
+              </tr>
+              <tr>
+                <td><strong>Khả năng ứng dụng</strong></td>
+                <td>Thụ động, phù hợp đọc lướt.</td>
+                <td>Hữu ích cho bài viết ngắn, dễ hiểu.</td>
+                <td>Xuất sắc – phù hợp cho báo cáo khoa học, bài thuyết trình.</td>
+              </tr>
+              <tr>
+                <td><strong>Mức độ tư duy Bloom</strong></td>
+                <td>Nhớ (Remembering)</td>
+                <td>Hiểu (Understanding)</td>
+                <td>Phân tích &amp; Vận dụng (Analyzing &amp; Applying)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="principles-grid">
+          <h4>🌟 Bộ 8 quy tắc vàng để viết Prompt xuất sắc</h4>
+          <div class="principles-container">
+            <div class="principle-item">
+              <h5>1. Xác định Mục tiêu &amp; Đối tượng</h5>
+              <p>Nêu rõ đối tượng tiếp nhận để AI điều chỉnh độ phức tạp ngôn ngữ và nội dung phù hợp.</p>
+            </div>
+            <div class="principle-item">
+              <h5>2. Giao Vai trò cụ thể cho AI</h5>
+              <p>Chỉ định vai trò (Giảng viên, Nhà nghiên cứu...) để kích hoạt luồng tư duy chuyên môn sâu hơn.</p>
+            </div>
+            <div class="principle-item">
+              <h5>3. Cấu trúc các bước rõ ràng</h5>
+              <p>Dùng các bước 1-2-3 ép AI trả về câu trả lời có hệ thống, tránh lan man và thiếu trọng tâm.</p>
+            </div>
+            <div class="principle-item">
+              <h5>4. Kích hoạt chuỗi suy nghĩ (CoT)</h5>
+              <p>Hướng AI đi từ trực giác thực tế đến lý thuyết học thuật bằng Chain-of-Thought prompting.</p>
+            </div>
+            <div class="principle-item">
+              <h5>5. Gửi kèm ví dụ mẫu (Few-shot)</h5>
+              <p>Cung cấp mẫu định dạng mong muốn để AI bắt chước chính xác phong cách trình bày.</p>
+            </div>
+            <div class="principle-item">
+              <h5>6. Kiểm soát định dạng đầu ra</h5>
+              <p>Chỉ định rõ kết quả phải là bảng biểu, đoạn văn ngắn hay gạch đầu dòng có cấu trúc.</p>
+            </div>
+            <div class="principle-item">
+              <h5>7. Tạo câu hỏi phản tư cuối bài</h5>
+              <p>Đặt yêu cầu kết thúc bằng câu hỏi mở để gợi ý tư duy sâu và khuyến khích tự nghiên cứu.</p>
+            </div>
+            <div class="principle-item">
+              <h5>8. Lặp và tinh chỉnh liên tục</h5>
+              <p>Chạy thử nghiệm, đánh giá phản hồi và tối ưu hóa câu lệnh qua nhiều vòng lặp thực nghiệm.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="action-btn" href="docs/w3.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== TASK 4 ==================== -->
+    <section class="section" id="task-4">
+      <article class="task-card">
+        <div class="task-head">
+          <span>04</span>
+          <div>
+            <h2>Sử dụng Công cụ Hợp tác Trực tuyến cho Dự án Nhóm</h2>
+            <p>Vận hành đồng bộ bộ 4 công cụ số trong dự án nghiên cứu về lĩnh vực xã hội nhân văn và nghệ thuật.</p>
+          </div>
+        </div>
+
+        <p class="lead-text">Trong dự án học tập nhóm về chủ đề <strong>"Nghiên cứu tổng quan lĩnh vực xã hội nhân văn và nghệ thuật"</strong>, em đã chủ động xây dựng và vận hành hệ sinh thái công cụ cộng tác trực tuyến để điều phối công việc hiệu quả:</p>
+
+        <div class="tools-usage-grid">
+          <div class="tool-card trello">
+            <h5>📋 Trello (Quản trị Tác vụ)</h5>
+            <p>Phân chia và theo dõi trạng thái công việc nhóm. Tạo các thẻ nhiệm vụ: "Thu thập tài liệu UNESCO", "Phân tích xu hướng số hóa văn hóa", "Thiết kế slide báo cáo". Cập nhật thẻ theo chu kỳ 3 lần/tuần và gắn nhãn ưu tiên màu sắc rõ ràng.</p>
+          </div>
+          <div class="tool-card discord">
+            <h5>💬 Discord (Kênh liên lạc chính)</h5>
+            <p>Không gian họp nhóm trực tuyến và thảo luận chuyên môn. Tạo các channel riêng biệt: <code>#tai-lieu</code>, <code>#thao-luan</code>, <code>#thong-bao</code>. Sử dụng tính năng ghim tin nhắn để không bỏ sót yêu cầu quan trọng.</p>
+          </div>
+          <div class="tool-card docs">
+            <h5>📝 Google Docs (Soạn thảo cộng tác)</h5>
+            <p>Môi trường đồng tác giả biên soạn báo cáo học tập. Chủ động sử dụng chế độ <b>"Đề xuất" (Suggesting)</b> thay vì chỉnh sửa trực tiếp. Dùng công cụ Comment để góp ý xây dựng phần viết của các bạn.</p>
+          </div>
+          <div class="tool-card drive">
+            <h5>📂 Google Drive (Lưu trữ tập trung)</h5>
+            <p>Xây dựng hệ thống thư mục 3 cấp. Quy chuẩn tên: <code>[TenNguoi]_[TenFile]_[Ngay]</code>. Phân quyền truy cập khoa học: Thành viên có quyền Chỉnh sửa, Giảng viên có quyền Xem và Nhận xét.</p>
+          </div>
+        </div>
+
+        <div class="drive-tree-box">
+          <h4>🗄️ Cấu trúc thư mục dự án nhóm trên Google Drive</h4>
+          <pre class="folder-tree">
+📂 DuAn_XHNhanVan_Nhom4 (Thư mục gốc chung)
+├── 📂 01_TaiLieu_NghienCuu (PDF, Link tài liệu tham khảo)
+│   ├── 📄 UNESCO_SocialHumanities_2022.pdf
+│   └── 📄 WEF_SkillsReport_2023.pdf
+├── 📂 02_BanThao_BaoCao (Google Docs bản thảo)
+│   ├── 📄 LeBAT_Chuong1_TongQuan.docx
+│   └── 📄 NhomTong_BanThao_v3.docx
+└── 📂 03_HinhAnh_MinhChung (Ảnh chụp, sản phẩm)
+    └── 📷 Screenshot_Trello_2026-05.png</pre>
+        </div>
+
+        <div class="challenges-box">
+          <h4>🧩 Thách thức thực chiến &amp; Giải pháp sáng tạo</h4>
+          <div class="challenge-item">
+            <strong>⏰ Thách thức 1: Phân bổ công việc không đều khi lịch học các thành viên khác nhau</strong>
+            <p>💡 <i>Giải pháp:</i> Sử dụng Trello Calendar view để hiển thị lịch biểu rõ ràng. Phân chia task theo khả năng và thời gian của từng thành viên, tránh dồn việc vào một người.</p>
+          </div>
+          <div class="challenge-item">
+            <strong>✍️ Thách thức 2: Xung đột khi nhiều người cùng chỉnh sửa Google Docs</strong>
+            <p>💡 <i>Giải pháp:</i> Thống nhất nguyên tắc: chỉ sử dụng chế độ <b>Suggesting</b>, không Edit trực tiếp vào phần của người khác. Tạo version history checkpoint hàng ngày để an toàn.</p>
+          </div>
+          <div class="challenge-item">
+            <strong>🔔 Thách thức 3: Thông báo quan trọng bị trôi trong Discord group</strong>
+            <p>💡 <i>Giải pháp:</i> Tạo channel <code>#📌thong-bao-chinh</code> dành riêng cho thông báo chính thức. Ghim tin nhắn deadline và yêu cầu từ giảng viên. Dùng @mention để đảm bảo mọi người đều nhận được.</p>
+          </div>
+        </div>
+
+        <a class="action-btn" href="docs/w4.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== TASK 5 ==================== -->
+    <section class="section" id="task-5">
+      <article class="task-card">
+        <div class="task-head">
+          <span>05</span>
+          <div>
+            <h2>Sử dụng AI Tạo sinh hỗ trợ Sáng tạo Nội dung số</h2>
+            <p>Thiết kế Infographic "Tác động của AI đối với sinh viên đại học" kết hợp bộ ba công cụ AI tạo sinh.</p>
+          </div>
+        </div>
+
+        <p class="lead-text">Áp dụng quy trình sáng tạo tích hợp với AI trong vai trò <strong>"Giám đốc Nội dung Giáo dục" (Education Content Director)</strong> để sản xuất infographic truyền thông về tác động của AI trong giáo dục đại học:</p>
+
+        <div class="ai-pipeline">
+          <div class="pipeline-step">
+            <strong>🤖 Bước 1: Lên ý tưởng &amp; Viết nội dung (Google Gemini)</strong>
+            <p>Dùng prompt nhập vai chuyên gia giáo dục để tạo dàn ý 5 tác động AI chính trong học đại học. AI cung cấp thông tin chuyên môn chuẩn xác nhưng văn phong còn mang tính hàn lâm, cần cá nhân hóa.</p>
+          </div>
+          <div class="pipeline-step">
+            <strong>🎨 Bước 2: Tạo hình ảnh minh họa (Bing Image Creator / DALL-E 3)</strong>
+            <p>Viết prompt chi tiết để sinh bộ icon 3D chủ đề học thuật công nghệ: não bộ phát sáng, màn hình laptop với AI assistant, biểu đồ tăng trưởng kỹ năng. Chạy qua <code>Remove.bg</code> để xuất PNG trong suốt.</p>
+          </div>
+          <div class="pipeline-step">
+            <strong>🧩 Bước 3: Thiết kế bố cục trực quan (Canva AI &amp; Magic Design)</strong>
+            <p>Dùng Canva AI tạo khung màu nền gradient tím-xanh hiện đại. Can thiệp thủ công &gt;50%: thêm icon 3D tự sinh, sắp xếp luồng thông tin theo dạng timeline dọc, chỉnh phông Playfair Display &amp; Inter.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Quy trình tinh chỉnh nội dung: Bản thảo AI vs Bản biên tập cá nhân</caption>
+            <thead>
+              <tr>
+                <th>Tác động AI</th>
+                <th>Bản thảo thô của AI</th>
+                <th>Bản tinh chỉnh (Cá nhân biên soạn)</th>
+                <th>Hiệu quả cải tiến</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Học cá nhân hóa</strong></td>
+                <td>"AI provides personalized learning experiences"</td>
+                <td><strong>"AI điều chỉnh lộ trình học theo tốc độ &amp; phong cách riêng của từng bạn!"</strong></td>
+                <td>Ngôn ngữ gần gũi, tạo kết nối cảm xúc với sinh viên Việt Nam.</td>
+              </tr>
+              <tr>
+                <td><strong>Hỗ trợ nghiên cứu</strong></td>
+                <td>"AI assists in academic research and information retrieval"</td>
+                <td><strong>"Tìm kiếm 1000 bài báo trong 10 giây – AI là 'thư ký nghiên cứu' không ngủ của bạn."</strong></td>
+                <td>Hình tượng hóa sinh động, dễ nhớ, phù hợp truyền thông mạng xã hội.</td>
+              </tr>
+              <tr>
+                <td><strong>Phản hồi tức thì</strong></td>
+                <td>"AI provides immediate feedback on student performance"</td>
+                <td><strong>"Không cần chờ đến buổi học – AI phản hồi bài làm ngay lập tức, 24/7!"</strong></td>
+                <td>Nhấn mạnh lợi ích tức thì, tạo hấp dẫn với sinh viên bận rộn.</td>
+              </tr>
+              <tr>
+                <td><strong>Thách thức học thuật</strong></td>
+                <td>"AI poses risks of academic dishonesty"</td>
+                <td><strong>"Lằn ranh mong manh: Dùng AI thông minh hay để AI 'nghĩ hộ' bạn?"</strong></td>
+                <td>Đặt câu hỏi gợi mở, khuyến khích tư duy phản biện của người đọc.</td>
+              </tr>
+              <tr>
+                <td><strong>Kỹ năng tương lai</strong></td>
+                <td>"AI skills are important for future employment"</td>
+                <td><strong>"Biết dùng AI = Siêu năng lực thế kỷ 21 – Bắt đầu luyện ngay hôm nay!"</strong></td>
+                <td>Tạo động lực hành động, ngôn ngữ truyền cảm hứng cho Gen Z.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ethics-box">
+          <h4>🛡️ Trách nhiệm và Đạo đức sử dụng AI trong sáng tạo</h4>
+          <ul>
+            <li><strong>Sự minh bạch:</strong> Luôn thừa nhận việc dùng AI làm "nguyên liệu" (nội dung thô, icon hình ảnh). Không mạo nhận là tự làm hoàn toàn.</li>
+            <li><strong>Quyền sở hữu trí tuệ:</strong> Thận trọng với hình ảnh do AI tạo (học từ dữ liệu Internet), không sử dụng thương mại mà không kiểm tra bản quyền.</li>
+            <li><strong>Tính nguyên bản cá nhân:</strong> Duy trì đóng góp cá nhân &gt;50% – biên tập sâu nội dung, điều chỉnh bố cục, cá nhân hóa ngôn ngữ và trực tiếp chịu trách nhiệm về chất lượng sản phẩm cuối.</li>
+          </ul>
+        </div>
+
+        <a class="action-btn" href="docs/w5.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== TASK 6 ==================== -->
+    <section class="section" id="task-6">
+      <article class="task-card">
+        <div class="task-head">
+          <span>06</span>
+          <div>
+            <h2>Nhận diện Đạo văn &amp; Sử dụng AI có Trách nhiệm trong Học tập</h2>
+            <p>Phân tích các hình thức đạo văn phổ biến, kỹ thuật paraphrasing hiệu quả và bộ nguyên tắc liêm chính học thuật.</p>
+          </div>
+        </div>
+
+        <p class="lead-text">Trong môi trường học thuật hiện đại, tính trung thực đóng vai trò nền tảng cho chất lượng nghiên cứu và giáo dục. Bài báo cáo phân tích hệ thống các hình thức đạo văn và công cụ phòng ngừa:</p>
+
+        <div class="plagiarism-types">
+          <div class="plagiarism-card danger">
+            <h5>🔴 1. Sao chép trực tiếp không trích dẫn (Direct Plagiarism)</h5>
+            <p>Hình thức đạo văn nghiêm trọng nhất: Sao chép nguyên văn nội dung từ nguồn khác mà không đặt trong dấu ngoặc kép, không ghi nguồn. Hậu quả: Bị đình chỉ học, hủy bài, thậm chí đuổi học.</p>
+          </div>
+          <div class="plagiarism-card warning">
+            <h5>🟡 2. Paraphrasing không đủ (Patchwriting)</h5>
+            <p>Thay một vài từ hoặc đổi cấu trúc câu nhưng vẫn giữ nguyên phần lớn ý tưởng và logic của bản gốc mà không trích dẫn nguồn đầy đủ. Đây là dạng đạo văn "ẩn" phổ biến nhất.</p>
+          </div>
+          <div class="plagiarism-card">
+            <h5>🟠 3. Tự đạo văn (Self-Plagiarism)</h5>
+            <p>Nộp lại nội dung cũ của chính mình từ bài tập/môn học trước cho một môn học mới mà không khai báo. Dù là "tự copy" nhưng vẫn vi phạm nguyên tắc liêm chính học thuật.</p>
+          </div>
+          <div class="plagiarism-card">
+            <h5>⚪ 4. Đạo văn cấu trúc (Mosaic Plagiarism)</h5>
+            <p>Lắp ghép nhiều đoạn từ nhiều nguồn khác nhau thành một bài mới mà không trích dẫn riêng cho từng đoạn. Khó phát hiện bằng công cụ thông thường nhưng vẫn vi phạm liêm chính.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>So sánh hiệu quả các công cụ phát hiện đạo văn phổ biến</caption>
+            <thead>
+              <tr>
+                <th>Công cụ</th>
+                <th>Phạm vi kiểm tra</th>
+                <th>Phát hiện AI-text</th>
+                <th>Độ chính xác</th>
+                <th>Miễn phí</th>
+                <th>Phù hợp cho</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Turnitin</strong></td>
+                <td>Cực rộng (Database 91B+ trang)</td>
+                <td><span class="rating-badge rating-vhigh">Có (AI writing)</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-low">Không (Trả phí)</span></td>
+                <td>Trường đại học, tổ chức</td>
+              </tr>
+              <tr>
+                <td><strong>Grammarly</strong></td>
+                <td>Trung bình (Web public)</td>
+                <td><span class="rating-badge rating-high">Có</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-med">Bản giới hạn</span></td>
+                <td>Sinh viên, cá nhân</td>
+              </tr>
+              <tr>
+                <td><strong>Copyscape</strong></td>
+                <td>Internet công cộng</td>
+                <td><span class="rating-badge rating-low">Không</span></td>
+                <td><span class="rating-badge rating-high">Cao (web)</span></td>
+                <td><span class="rating-badge rating-med">Bản giới hạn</span></td>
+                <td>Blog, nội dung web</td>
+              </tr>
+              <tr>
+                <td><strong>PlagScan</strong></td>
+                <td>Rộng (nhiều nguồn)</td>
+                <td><span class="rating-badge rating-med">Một phần</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-low">Không</span></td>
+                <td>Doanh nghiệp, tổ chức</td>
+              </tr>
+              <tr>
+                <td><strong>GPTZero</strong></td>
+                <td>Phát hiện AI text</td>
+                <td><span class="rating-badge rating-vhigh">Chuyên biệt</span></td>
+                <td><span class="rating-badge rating-high">Khá tốt</span></td>
+                <td><span class="rating-badge rating-high">Miễn phí cơ bản</span></td>
+                <td>Phát hiện nội dung AI</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ethics-box">
+          <h4>📜 Bộ 7 Nguyên tắc Liêm chính Học thuật cá nhân</h4>
+          <div class="principles-grid-v6">
+            <div class="p-card-v6">
+              <strong>1. AI là trợ lý, không phải tác giả</strong>
+              <span>Dùng AI gợi ý và hỗ trợ, tuyệt đối không để AI thay thế tư duy độc lập của bản thân.</span>
+            </div>
+            <div class="p-card-v6">
+              <strong>2. Kiểm chứng chéo mặc định</strong>
+              <span>Mọi thông tin từ AI đều phải được đối chiếu với tài liệu chính thống và sách giáo trình.</span>
+            </div>
+            <div class="p-card-v6">
+              <strong>3. Không sao chép nguyên bản</strong>
+              <span>Luôn viết lại bằng giọng văn cá nhân và cấu trúc riêng để giữ vững bản sắc học thuật.</span>
+            </div>
+            <div class="p-card-v6">
+              <strong>4. Tuyên bố minh bạch về AI</strong>
+              <span>Trung thực ghi rõ mức độ sử dụng AI theo chuẩn trích dẫn APA 7 của trường.</span>
+            </div>
+            <div class="p-card-v6">
+              <strong>5. Tôn trọng bản quyền</strong>
+              <span>Tuân thủ quy chế liêm chính học thuật của Đại học Quốc gia Hà Nội và Đại học Giáo dục.</span>
+            </div>
+            <div class="p-card-v6">
+              <strong>6. Bảo vệ thông tin cá nhân</strong>
+              <span>Không chia sẻ thông tin riêng tư, dữ liệu bảo mật hoặc thông tin nhạy cảm lên hệ thống AI.</span>
+            </div>
+            <div class="p-card-v6">
+              <strong>7. Phát triển tư duy tự lập</strong>
+              <span>Dùng AI như bệ phóng để học sâu hơn, không dùng như lối tắt để trốn tránh việc tự nghiên cứu.</span>
+            </div>
+          </div>
+        </div>
+
+        <a class="action-btn" href="docs/w6.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== TASK 7 ==================== -->
+    <section class="section" id="task-7">
+      <article class="task-card">
+        <div class="task-head">
+          <span>07</span>
+          <div>
+            <h2>Ứng dụng AI tạo Học liệu Ngoại ngữ Cá nhân hóa</h2>
+            <p>Thiết kế bộ học liệu tiếng Anh cá nhân hóa cấp độ B1 về chủ đề AI trong giáo dục với sự hỗ trợ của ChatGPT &amp; Gemini.</p>
+          </div>
+        </div>
+
+        <p class="lead-text">Nghiên cứu thực chiến về khả năng tạo học liệu ngoại ngữ cá nhân hóa của AI: thiết kế bộ bài đọc, bài tập ngữ pháp, từ vựng và hoạt động luyện nói/viết cho người học tiếng Anh cấp độ B1:</p>
+
+        <div class="research-intro">
+          <h4>📊 Thông tin người học &amp; mục tiêu</h4>
+          <p><strong>Trình độ hiện tại:</strong> B1 (Trung cấp) &nbsp;|&nbsp; <strong>Mục tiêu:</strong> Mở rộng vốn từ vựng chủ đề Education &amp; Technology, nâng cao kỹ năng đọc hiểu, cải thiện giao tiếp học thuật bằng tiếng Anh</p>
+
+          <div class="query-block">
+            <strong>Prompt mẫu đã sử dụng:</strong><br>
+            <code>Act as an English teacher. Create a B1-level reading passage (250-300 words) about the impact of Artificial Intelligence on education. Include vocabulary suitable for university students and create 5 comprehension questions.</code>
+          </div>
+        </div>
+
+        <div class="learning-grid">
+          <div class="learn-card">
+            <div class="learn-icon">📖</div>
+            <h5>Bài đọc hiểu (ChatGPT)</h5>
+            <p>Tạo đoạn đọc 280 chữ cấp B1 về AI trong giáo dục, kèm 5 câu hỏi comprehension từ literal đến inferential.</p>
+          </div>
+          <div class="learn-card">
+            <div class="learn-icon">📝</div>
+            <h5>Bài tập ngữ pháp (Gemini)</h5>
+            <p>10 bài tập Present Perfect &amp; Passive Voice dựa trên ngữ cảnh bài đọc, phù hợp học sinh B1.</p>
+          </div>
+          <div class="learn-card">
+            <div class="learn-icon">🔤</div>
+            <h5>Bài tập từ vựng (Claude)</h5>
+            <p>Exercises cho 5 từ chủ đề: <i>artificial intelligence, personalized, feedback, efficiency, academic</i> với context phong phú.</p>
+          </div>
+          <div class="learn-card">
+            <div class="learn-icon">🗣️</div>
+            <h5>Hoạt động nói (ChatGPT)</h5>
+            <p>Speaking activities: Role-play giữa sinh viên và AI advisor, thảo luận nhóm về tác động AI trong học tập.</p>
+          </div>
+          <div class="learn-card">
+            <div class="learn-icon">✍️</div>
+            <h5>Hoạt động viết (Gemini)</h5>
+            <p>Writing task: Viết đoạn văn 150 chữ trình bày quan điểm cá nhân về AI trong học tập, có hướng dẫn cấu trúc.</p>
+          </div>
+          <div class="learn-card">
+            <div class="learn-icon">📊</div>
+            <h5>Đánh giá &amp; So sánh</h5>
+            <p>So sánh chất lượng đầu ra giữa ChatGPT, Gemini và Claude AI trong việc tạo học liệu ngôn ngữ.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>So sánh chất lượng học liệu AI tạo ra (ChatGPT vs Gemini vs Claude)</caption>
+            <thead>
+              <tr>
+                <th>Tiêu chí</th>
+                <th>ChatGPT</th>
+                <th>Google Gemini</th>
+                <th>Claude AI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Chính xác trình độ B1</strong></td>
+                <td><span class="rating-badge rating-vhigh">Rất tốt</span></td>
+                <td><span class="rating-badge rating-high">Tốt</span></td>
+                <td><span class="rating-badge rating-high">Tốt</span></td>
+              </tr>
+              <tr>
+                <td><strong>Đa dạng bài tập</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+              <tr>
+                <td><strong>Ngữ pháp &amp; Từ vựng</strong></td>
+                <td><span class="rating-badge rating-vhigh">Xuất sắc</span></td>
+                <td><span class="rating-badge rating-high">Tốt</span></td>
+                <td><span class="rating-badge rating-vhigh">Xuất sắc</span></td>
+              </tr>
+              <tr>
+                <td><strong>Tính cá nhân hóa</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-med">Trung bình</span></td>
+                <td><span class="rating-badge rating-vhigh">Rất cao</span></td>
+              </tr>
+              <tr>
+                <td><strong>Dễ chỉnh sửa &amp; tái sử dụng</strong></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+                <td><span class="rating-badge rating-high">Cao</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <a class="action-btn" href="docs/w7.docx" download>📥 Tải file bài tập gốc (DOCX)</a>
+      </article>
+    </section>
+
+    <!-- ==================== REFLECTION ==================== -->
+    <section class="section" id="reflection">
+      <div class="reflection-box">
+        <h2>💡 Phản tư &amp; Định hướng phát triển</h2>
+        <p style="font-size:0.95rem;line-height:1.75;color:rgba(255,255,255,0.85);max-width:680px;position:relative;z-index:1;">Hành trình 7 bài thực hành trong học phần VNU1001 đã mở ra cho em một góc nhìn hoàn toàn mới về vai trò của công nghệ số và AI trong lĩnh vực giáo dục và khoa học nhân văn. Mỗi bài học là một bước tiến trong việc xây dựng năng lực số toàn diện:</p>
+
+        <div class="reflection-grid">
+          <div class="reflect-card">
+            <h4>🌱 Những gì đã học được</h4>
+            <p>Từ quản lý tệp tin khoa học đến viết prompt AI chuyên nghiệp, từ cộng tác số đến liêm chính học thuật – mỗi kỹ năng đều tích hợp liền mạch, hỗ trợ lẫn nhau trong thực tiễn học tập và nghiên cứu.</p>
+          </div>
+          <div class="reflect-card">
+            <h4>🎯 Thách thức đã vượt qua</h4>
+            <p>Khó khăn lớn nhất là cân bằng giữa sử dụng AI hiệu quả và duy trì tư duy độc lập. Em đã học cách "sử dụng AI thông minh" – dùng AI như công cụ mở rộng năng lực, không phải thay thế trí tuệ.</p>
+          </div>
+          <div class="reflect-card">
+            <h4>🔭 Định hướng ứng dụng</h4>
+            <p>Áp dụng AI vào thiết kế học liệu giáo dục nhân văn, tạo nội dung số cho giảng dạy, nghiên cứu đề xuất chính sách giáo dục tích hợp AI có trách nhiệm trong bối cảnh Việt Nam.</p>
+          </div>
+          <div class="reflect-card">
+            <h4>✨ Giá trị cốt lõi mang theo</h4>
+            <p><em>"Công nghệ là công cụ mạnh mẽ, nhưng giá trị nhân văn – sự trung thực, sự đồng cảm và tư duy phản biện – mới là la bàn định hướng mọi ứng dụng công nghệ có ý nghĩa."</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- end .main-content -->
+
+  <script src="script.js"></script>
+</body>
+</html>
